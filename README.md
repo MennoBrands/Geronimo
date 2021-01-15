@@ -14,4 +14,4 @@ Repository for a high fidelity prototype for my school project "Geronimo".
 - [Shuffle.js](https://vestride.github.io/Shuffle/), used for displaying and sorting the courses. Also used for the community page.
 
 ## Demo
-See index.html or click this link [demo](https://mennobrands.nl/Geronimo)
+[Demo at https://mennobrands.nl/Geronimo](https://mennobrands.nl/Geronimo)
