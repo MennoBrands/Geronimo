@@ -1,4 +1,8 @@
 # Geronimo
+
+![Image of Geronimo logo](https://github.com/MennoBrands/Geronimo/blob/main/images/GeronimoLogo.PNG)
+
+
 ## Synopsis
 Repository for a high fidelity prototype for my school project "Geronimo".
 
