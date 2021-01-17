@@ -46,3 +46,5 @@ $('#btnSchrijven').on('click', function () {
 $('#btnKoken').on('click', function () {
     shuffleInstance.filter('koken');
 });
+
+
