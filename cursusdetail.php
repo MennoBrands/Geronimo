@@ -75,7 +75,7 @@
             </div>
             <div id="indexButtonss">
                 <a class="indexButton" href="#"><h1>Locatie aanvragen</h1></a>
-                <a class="indexButton" href="#"><h1>Aanmelden</h1></a>
+                <a class="indexButton" href="email.php"><h1>Aanmelden</h1></a>
             </div>
             <h1 class="titel">Voorgaande Cursisten</h1>
         </div>

@@ -149,16 +149,16 @@ li:hover {
     width: 20%;
     margin-right: 10px;
     border-color: #1b1e21;
-    transition: transform .2s;
-}
-
-.js-item:hover {
-    transform: scale(1.1);
 }
 
 .gridImg {
     height: 160px;
     width: 284px;
+    transition: transform .2s;
+}
+
+.gridImg:hover {
+    transform: scale(1.1);
 }
 
 figcaption {
@@ -170,6 +170,7 @@ figcaption {
     background-image: url(../images/BlauwStreep.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    transform: scale(1.01);
 }
 
 #container2 {
@@ -255,17 +256,21 @@ figcaption {
 }
 
 
-.slick-prev::after:hover {
+.slick-prev::after {
     background-image: url(../images/BlauwStreep.png);
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
-.slick-next::after:hover {
+.slick-next::after {
     background-image: url(../images/BlauwStreep.png);
     background-repeat: no-repeat;
-    background-size: 100%;
 }
 
+.labelform {
+    font-family: Edmund-Free;
+    font-size: 25pt;
+}
 
-
+.formemail {
+    width: 30%;
+}
