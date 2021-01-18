@@ -47,4 +47,26 @@ $('#btnKoken').on('click', function () {
     shuffleInstance.filter('koken');
 });
 
+$('#Berichtbutton').on('click', function () {
+
+    const div = document.createElement('div');
+    var teksts = document.getElementById('textAreaPost').value
+    div.className = 'addedDiv';
+    div.innerHTML = `
+
+        <figure data-groups='["huisTuin"]' className="js-item img-item col-3@sm col-3@xs">
+            <div className="aspect aspect--16x9">
+                <div className="aspect__inner">
+                
+                </div>
+            </div>
+            <img class="gridImg" src="images/hobby0.jpg"/>
+            <figcaption> Gebruiker </figcaption>
+            <p> Vandaag in de tuin gewerkt! </p>
+        </figure>
+    `;
+
+    document.getElementById('divAdd').appendChild(div);
+});
+
 

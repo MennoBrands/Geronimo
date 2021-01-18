@@ -274,3 +274,24 @@ figcaption {
 .formemail {
     width: 30%;
 }
+
+.btnImage {
+    height: 40px;
+}
+
+.berichtContainer {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.berichtBox {
+    margin-top: 50px;
+}
+
+.roundedIMG {
+    border-radius: 50%;
+}
