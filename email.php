@@ -18,12 +18,21 @@
         </header>
         <div id="container">
             <h1 class="titel">
-                Email
+                Kies datum en tijd en vul uw gegevens in.
             </h1>
             <p class="beschrijving">
-                Vul hieronder uw email in voor een conformatie bericht. <br/><br/>
+                Kies hieronder op welke datum en tijd u de cursus "Chefkok Helpt" wilt volgens.   <br/><br/>
             </p>
             <form class="formemail" action="emailTo.php" method="post">
+                <label class="labelform" for="date">Datum</label> <br/>
+                <input type="date" value="2017-06-01" name="date"> <br/><br/>
+                <label class="labelform" for="time">Tijd</label><br/>
+                <input id="time" type="time" name="time" value="12:00"><br/><br/>
+                <label class="labelform" for="time">Locatie</label><br/>
+                <input type="radio" id="loc1" name="locatie" value="Eindhoven - Vestdijk 30, 5611 CC">
+                <label for="male">Eindhoven - Vestdijk 30, 5611 CC</label><br>
+                <input type="radio" id="loc2" name="locatie" value="Utrecht - Waterliniedok 1, 4723 RT">
+                <label for="female">Utrecht - Waterliniedok 1, 4723 RT</label><br><br>
                 <label class="labelform" for="email">Email</label> <br/>
                 <input type="email" size="100" class="form-control" placeholder="Enter email" id="email" name="email"><br><br>
                 <input class="btn btn-primary" type="submit" value="Verzenden">

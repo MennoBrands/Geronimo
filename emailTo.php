@@ -11,6 +11,9 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 $sendToEmail = $_POST['email'];
+$date = $_POST['date'];
+$time = $_POST['time'];
+$locatie = $_POST['locatie'];
 echo $sendToEmail;
 
 // Instantiation and passing `true` enables exceptions
@@ -44,8 +47,8 @@ try {
                         <img height="300px" alt="PHPMailer" src="cid:my-photo"> <br/><br/>
 
                         <b>CURSUS:</b> 	CHEFKOK HELPT<br/>
-                        <b>LOCATIE:</b> 	EINDHOVEN VESTDIJK 30 5611 VC<br/>
-                        <b>DATUM:</b> 		Woensdag 16/12 14:30 tot 18:00 <br/><br/>
+                        <b>LOCATIE:</b> 	' . $locatie . '<br/>
+                        <b>DATUM:</b> 		' . $date . ' om ' . $time . ' <br/><br/>
     
                         Voor vragen over de cursus kunt u terecht bij de cursus gever:<br/>
                         <b>NAAM:</b> 		Bram Smits<br/>
@@ -64,13 +67,13 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     $mail->send();
     echo 'Message has been sent';
-    $message = "De conformatie mail is verzonden!";
+    $message = "Bedankt voor het inschrijven bij de cursus: Chefkok helpt. U krijgt nog een mail ter conformatie";
     echo "<script>
             alert('$message');
-            window.location.href='email.php';
+            window.location.href='cursusoverzicht.php';
           </script>";
 } catch (Exception $e) {
-    $message = "Er is iets fout gegaan.";
+    $message = "Er is iets fout gegaan bij het inschrijven, probeer het opnieuw";
     echo "<script>
             alert('$message');
             window.location.href='email.php';
